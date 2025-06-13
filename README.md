@@ -8,10 +8,44 @@ This lab consists of three team activities. Please submit the following files to
 3. [Linear Interpolation](#linear-interpolation) submit to Gradescope
 
 ## Sequential Algorithm
-Description
+This activity is meant to help illustrate the process of breaking more complex processes into sequential steps, and some of the choices and assumptions involved in doing so.
+1. To begin, each member of your team should **individually** create a sequence of instructions for a person to get from your classroom in ZACH to your choice of a) the E. King Gill statue, b) the giant Aggie ring statue in Haynes Ring Plaza, or c) the Matthew Gaines statue. Write your instructions as precisely as possible; “Go to Haynes Ring Plaza” is not a good instruction, while “Turn left”, “Walk straight until you are in front of the H2O fountain”, “Stop after you pass Rudder Tower,” etc. are reasonable. It might help you to bring up [aggiemap.tamu.edu](https://aggiemap.tamu.edu/), for a map of campus.
+2. Next, as a team, you should look at each member’s instructions one-by-one. Comment on each set of instructions, specifically noting whether the instructions are clear, whether they provide sufficient detail, and whether they would get someone to the destination. The person who wrote the instructions should not comment on their own instructions. **BEFORE MOVING ON**: Discuss as a team: Which one of the sets of instructions do you consider the “best”? Why?
+3. **DO NOT READ UNTIL TASK 2 IS COMPLETE!**
+<details>
+<summary>Click to reveal!</summary>
+  
+  As a team: Discuss together and answer the following questions. Your team should produce a **single PDF document** named `sequential_algorithm.pdf` with two items: (1) copies of each of the sets of instructions (you will need to share your instructions with each other, Google Drive is recommended), and (2) brief (a couple of sentences, or lists of no more than 10 things) answers to the following questions:
+    <ol type="a">
+    <li>Which set of your team’s sequences of steps did you identify as being the best? Why?</li>
+    <li>In what ways were the sets of sequences that were produced different?</li>
+    <li>In what ways were the sets of sequences that were produced the same?</li>
+    <li>Consider whether your choice of the best set of instructions might change depending on the person following them. For example (you may think of others), would the best set change if:
+    <ul>
+        <li>The person following them was already very familiar with campus, or had never set foot on campus.</li>
+        <li>The person following the instructions was using a wheelchair, or the person following the instructions was interested in jogging.</li>
+        <li>The weather was dark and raining outside, or it’s a beautiful and sunny 75 °F.</li>
+    </ul>
+    Briefly describe whether different sets of instructions might have been better options in other scenarios. 
+    </li>
+    <li>This was a very open-ended question. What questions might you have asked to begin with in order to better know how your sequential steps should have been written? The point here is to help you understand the importance of requirements gathering at the first stage of attacking a problem – **make sure you are solving the problem someone needs solved, rather than the one you want to solve**.</li>
+    </ol>
+</details>
 
 ## Giving Instructions
-Description
+This activity is meant to help you communicate clear instructions. First, choose one member of your team to be the speaker. Everyone else will be listeners. Have the speaker choose at least five basic shapes (circle, triangle, square, etc) and create abstract art on a sheet of paper. An example is shown below. **DO NOT** show the listeners your art. Next, give each listener a blank piece of paper and a pencil. Have the speaker describe their art in detail, while the listeners all attempt to recreate the image on their own piece of blank paper, based solely on the speaker’s instructions.
+- The listeners may NOT communicate with the speaker
+- The listeners may NOT communicate with each other
+- The listeners may NOT view each other’s or the speaker’s paper until the drawing is complete
+
+After all of the listeners have completed their drawings, have everyone compare with the speaker’s original art. Create a pdf document named `giving_instructions.pdf` and answer the following questions. Use complete sentences with about 50 words in each of your answers. Include a picture of the art that everyone created in the document.
+1.	What about the speaker’s instructions worked well?
+2.	What about the speaker’s instructions was difficult to follow?
+3.	If you had to repeat the activity, what would you do differently?
+
+If you have time, choose a different speaker and repeat the activity. Example abstract art:
+
+
 
 ## Linear Interpolation
 The purpose of this activity is to practice writing simple programs that require multiple variables, and to ensure you understand the idea of interpolation. One of the activities in the topic 2 individual lab will build on this program. ***Please refer to Canvas for the posted material on Linear Interpolation.***
@@ -38,6 +72,7 @@ Here are a few hints for Part 2:
 -	However, we want to report a position of the ISS between 0 kilometers and the numerical value of the orbit’s circumference expressed in kilometers.
 -	We could do this using a series of subtractions. We could perform successive subtractions of the circumference from the total position until the result was between 0 kilometers and the numerical value of circumference in kilometers. That would represent the position with respect to Houston. 
 -	If we were clever, we could also use “modulo division” in Python. (Remember from Lecture 1?)
+-	**Note:** Use the following equation for linear interpolation exactly as written: y = (slope)(x - x1) + y1
 -	**Questions to think about**: Is this linear “extrapolation”? If so, why are we are we using linear extrapolation despite all the warnings not to use it? Is there ever a case when using linear extrapolation is acceptable?
 -	**Another Question to think about**: Will the code for Part 2 output the correct answer for time (t) of 25 minutes as was used in Part 1?
 
@@ -62,7 +97,7 @@ For t = 300 minutes, the position p = 10222.078642554414 kilometers
 
 5. **Linear interpolation part 2 how do I do the calculation without a loop/if statement?** There's this really cool math operator in python: `%`. Don't remember what that is? Go back and review lecture 1!
 
-6. **Linear interpolation part 2 the last two digits in my answer is different from the example!** Did you use your calculator to calculate the circumference of the orbit? Did you hard code that number into your code? Don't do that! Python is your calculator in this class, so use code to calculate the value and store it in a variable.
+6. **Linear interpolation part 2 the last two digits in my answer is different from the example!** Did you use your calculator to calculate the circumference of the orbit? Did you hard code that number into your code? Don't do that! Python is your calculator in this class, so use code to calculate the value and store it in a variable. **But... I did that and it's still not right...** Did you use the equation given? You know, this one: **y = (slope)(x - x1) + y1**? Make sure you use it **EXACTLY AS WRITTEN**. Don't rearrange the terms, that will lead to roundoff errors which we won't talk about until lab 4.
 
 Have a question you don't see here? Email your instructor!
 
