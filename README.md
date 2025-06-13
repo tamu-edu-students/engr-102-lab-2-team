@@ -44,8 +44,7 @@ After all of the listeners have completed their drawings, have everyone compare 
 3.	If you had to repeat the activity, what would you do differently?
 
 If you have time, choose a different speaker and repeat the activity. Example abstract art:
-
-
+![abstract art](giving_instructions_abstract_art.png)
 
 ## Linear Interpolation
 The purpose of this activity is to practice writing simple programs that require multiple variables, and to ensure you understand the idea of interpolation. One of the activities in the topic 2 individual lab will build on this program. ***Please refer to Canvas for the posted material on Linear Interpolation.***
