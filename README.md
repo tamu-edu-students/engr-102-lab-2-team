@@ -47,7 +47,7 @@ If you have time, choose a different speaker and repeat the activity. Example ab
 ![abstract art](giving_instructions_abstract_art.png)
 
 ## Linear Interpolation
-The purpose of this activity is to practice writing simple programs that require multiple variables, and to ensure you understand the idea of interpolation. One of the activities in the topic 2 individual lab will build on this program. ***Please refer to Canvas for the posted material on Linear Interpolation.***
+The purpose of this activity is to practice writing simple programs that require multiple variables, and to ensure you understand the idea of interpolation. One of the activities in the topic 2 individual lab will build on this program. ***![Please refer to this file on Linear Interpolation](Linear_Interpolation_Lab_2.pdf) (also posted to Canvas).***
 
 You are an engineer at NASA monitoring the International Space Station (ISS) as it orbits the Earth at a constant rate of speed. You want to be able to predict where the ISS is above the Earth at any point in time. To do this, you take a measurement of how far around the Earth the ISS has traveled at two points in time. Assume that NASA has very precise instruments for determining position. You note the time of the first position, and a short while later (before the ISS has completed one revolution), you take a second measurement for how far the ISS has traveled, again noting the time.
 
